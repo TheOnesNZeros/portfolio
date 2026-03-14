@@ -7,16 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --black: #050508;
-      --neon: #00ffe0;
-      --neon2: #7b2fff;
-      --neon3: #ff2f7b;
-      --dim: #0a0a10;
-      --glass: rgba(0,255,224,0.04);
-      --border: rgba(0,255,224,0.12);
-      --text: #c8d8d4;
-      --muted: #4a6a65;
-    }
+  --black: #050508;
+  --neon: #00ffe0;
+  --neon2: #7b2fff;
+  --neon3: #ff2f7b;
+  --dim: #0a0a10;
+  --glass: rgba(0,255,224,0.04);
+  --border: rgba(0,255,224,0.12);
+
+  /* FIXED TEXT COLORS */
+  --text: #ffffff;
+  --muted: #d3dedb;
+  }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -87,8 +89,9 @@
       color: var(--muted);
     }
     .logo-main {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.3rem;
+      font-family: 'Bodoni Moda', serif;
+      font-size: 1.25rem;
+      flex-wrap: wrap;
       font-weight: 600;
       letter-spacing: 0.04em;
       color: #fff;
@@ -167,7 +170,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 0 48px;
+      padding: 0 24px;
       overflow: hidden;
       z-index: 1;
     }
